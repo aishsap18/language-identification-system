@@ -1,0 +1,16 @@
+# text = I am Sam
+1	I	
+2	am	
+3	Sam	
+
+# text = Sam I am
+1	Sam	
+2	I
+3	am	
+
+# text = I and Sam are friends
+1	I
+2	and
+3	Sam
+4	are
+5	friends

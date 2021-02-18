@@ -1,0 +1,103 @@
+[myenv] [asapkal1@linux4 assignment3] bash ngram_lc_train.bash UD_English-EWT/en_ewt-ud-train.conllu UD_English-GUM/en_gum-ud-train.conllu UD_Hindi-HDTB/hi_hdtb-ud-train.conllu MergedSets/dev_set.conllu MergedSets/dev_labels.txt SaveBest/best_language_classifier.pickle SaveBest/baseline_classifier.pickle
+Language Classification
+Baseline Training
+
+Time elapsed training: 48.5294246673584 seconds
+F1 score: 0.18350754936120792
+Training
+Backoff 1 for language 0
+Getting estimates for threshold: 15
+
+Time elapsed training: 17.114798069000244 seconds
+Backoff 1 for language 1
+Getting estimates for threshold: 15
+
+Time elapsed training: 3.2109997272491455 seconds
+Backoff 1 for language 2
+Getting estimates for threshold: 15
+
+Time elapsed training: 30.953526258468628 seconds
+Evaluating
+
+Time elapsed evaluating: 70.90696406364441 seconds
+F1 score: 0.619236315666993
+
+
+Training
+Backoff 1 for language 0
+Getting estimates for threshold: 30
+
+Time elapsed training: 16.036742448806763 seconds
+Backoff 1 for language 1
+Getting estimates for threshold: 30
+
+Time elapsed training: 3.2291502952575684 seconds
+Backoff 1 for language 2
+Getting estimates for threshold: 30
+
+Time elapsed training: 30.704623460769653 seconds
+Evaluating
+
+Time elapsed evaluating: 38.78594946861267 seconds
+F1 score: 0.6180484180639834
+
+
+Training
+Backoff 2 for language 0
+Getting estimates for threshold: 15
+Padding start and end and replacing UNK
+
+Computing bigram matrix.
+
+Time elapsed training: 137.3011598587036 seconds
+Backoff 2 for language 1
+Getting estimates for threshold: 15
+Padding start and end and replacing UNK
+
+Computing bigram matrix.
+
+Time elapsed training: 11.359812498092651 seconds
+Backoff 2 for language 2
+Getting estimates for threshold: 15
+Padding start and end and replacing UNK
+
+Computing bigram matrix.
+
+Time elapsed training: 230.82401394844055 seconds
+Evaluating
+
+Time elapsed evaluating: 77.33804392814636 seconds
+F1 score: 0.6297514300973727
+
+
+Training
+Backoff 2 for language 0
+Getting estimates for threshold: 20
+Padding start and end and replacing UNK
+
+Computing bigram matrix.
+
+Time elapsed training: 93.65473628044128 seconds
+Backoff 2 for language 1
+Getting estimates for threshold: 20
+Padding start and end and replacing UNK
+
+Computing bigram matrix.
+
+Time elapsed training: 10.54093885421753 seconds
+Backoff 2 for language 2
+Getting estimates for threshold: 20
+Padding start and end and replacing UNK
+
+Computing bigram matrix.
+
+Time elapsed training: 196.19637084007263 seconds
+Evaluating
+
+Time elapsed evaluating: 62.13266062736511 seconds
+F1 score: 0.6236374190811843
+
+
+F1 scores: [(('Baseline', '', '', '', ''), 0.18350754936120792), (('Backoff', 1, 15, 20, 20), 0.619236315666993), (('Backoff', 1, 30, 40, 40), 0.6180484180639834), (('Backoff', 2, 15, 20, 20), 0.6297514300973727), (('Backoff', 2, 20, 40, 40), 0.6236374190811843)]
+Best model config: ('Backoff', 2, 15, 20, 20)
+[myenv] [asapkal1@linux4 assignment3]     
