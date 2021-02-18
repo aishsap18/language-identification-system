@@ -28,15 +28,15 @@ I. MLE & Laplace
     1. Unigram -  
 ``` (lang_idf_env)$ bash ngram_lm_train.bash mle 1 data/UD_English-EWT/en_ewt-ud-train.conllu data/UD_English-EWT/en_ewt-ud-dev.conllu save_models/mle1.pickle 0 ```
 
-    2. Bigram -
+    2. Bigram -   
 ``` (lang_idf_env)$ bash ngram_lm_train.bash mle 2 data/UD_English-EWT/en_ewt-ud-train.conllu data/UD_English-EWT/en_ewt-ud-dev.conllu save_models/mle2.pickle 10 ```
 
 - Laplace Parameters to `ngram_lm_train.bash` - model_name, n, path_to_train_file, path_to_tune_file, path_to_serialized_model, (optional) [lambda, threshold]
 		
-    1. Unigram -
+    1. Unigram -   
 ``` (lang_idf_env)$ bash ngram_lm_train.bash laplace 1 data/English-EWT/en_ewt-ud-train.conllu data/English-EWT/en_ewt-ud-dev.conllu save_models/laplace1.pickle 1 0 ``` 
 
-    2. Bigram -
+    2. Bigram -   
 ``` (lang_idf_env)$ bash ngram_lm_train.bash laplace 2 data/English-EWT/en_ewt-ud-train.conllu data/English-EWT/en_ewt-ud-dev.conllu save_models/laplace2.pickle 1 10 ``` 
 
 
